@@ -11,27 +11,19 @@ const HeroWrapper = styled(animated.div)`
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 100vh;
   width: 100vw;
+  text-align: center;
   position: fixed;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   z-index: 15;
 `
-const RocketShipTitle = styled.h1`
-  color: #cc9056;
-  padding-top: 50px;
-  padding-left: 50px;
-  font-family: Langdon, cursive;
-  font-size: 5rem;
-  font-weight: 100;
+const HeroTitle = styled.h1`
+  margin: auto;
+  color: whitesmoke;
 `
 
-const Strapline = styled.div`
-  font-family: Dancing Script, cursive;
-  color: whitesmoke;
-  font-weight: 400;
-  font-size: 1.75rem;
-`
 const Hero = () => {
   const [isHeroOpen, setHeroOpen] = useState(true)
   const heroAnimation = useSpring({
@@ -40,12 +32,8 @@ const Hero = () => {
 
   return (
     <HeroWrapper style={heroAnimation} onClick={() => setHeroOpen(!isHeroOpen)}>
-      <RocketShipTitle>rocketship</RocketShipTitle>
+      <HeroTitle>I am a Hero Blind</HeroTitle>
       <div style={{ paddingBottom: '40px' }} />
-      <Strapline>
-        Purveyors of high quality comedy products to discerning ladies and
-        gentlemen everywhere.
-      </Strapline>
     </HeroWrapper>
   )
 }

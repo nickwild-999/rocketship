@@ -21,7 +21,7 @@ const Image = () => (
           childImageSharp {
             fluid(
               maxWidth: 200
-              duotone: { shadow: "#10c5f8", highlight: "#32CD32" }
+              duotone: { highlight: "#10c5f8", shadow: "#6736dd" }
             ) {
               ...GatsbyImageSharpFluid
             }
