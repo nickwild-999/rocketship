@@ -12,10 +12,10 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-family: Dancing Script, cursive;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     transform: rotate(-05deg);
-    padding-bottom:20px;
+    margin-bottom:5px;
   }
 
   p {

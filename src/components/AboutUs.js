@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutUs = () => (
   <>
-    <h2>About Us</h2>
+    <h2 style={{ textAlign: 'center' }}>About Us</h2>
     <p className="dropcap" style={{ paddingTop: '15px' }}>
       Rocketship Productions was founded by writer /director Nick Wild and
       casting director Nicci Topping shortly after the devastating Giggle Famine

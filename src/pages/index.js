@@ -18,10 +18,10 @@ const PageWrapper = styled.div`
 const IndexPage = () => (
   <Layout>
     <Hero />
-    <FPCarousel />
     <PageWrapper>
       <SEO title="Home" />
       <BlastOff />
+      <FPCarousel />
       <AboutUs />
     </PageWrapper>
   </Layout>

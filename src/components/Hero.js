@@ -4,18 +4,16 @@ import { animated, useSpring } from 'react-spring'
 
 import rocketshipHero from '../images/rocketship-hero.svg'
 
-const HeroWrapper = styled(animated.div)`
+const HeroWrapper = styled.div`
   background-image: url(${rocketshipHero});
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 100vh;
   width: 100vw;
-  position: fixed;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  z-index: 15;
 `
 const RocketShipTitle = styled.h1`
   color: #cc9056;
@@ -48,7 +46,7 @@ const Hero = () => {
   })
 
   return (
-    <HeroWrapper style={heroAnimation} onClick={() => setHeroOpen(!isHeroOpen)}>
+    <HeroWrapper>
       <div style={{ display: 'flex' }}>
         <RocketShipTitle>
           ROCKETSHIP
