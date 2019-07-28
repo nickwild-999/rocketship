@@ -21,7 +21,7 @@ const RocketShipTitle = styled.h1`
   color: #cc9056;
   padding-top: 50px;
   padding-left: 50px;
-  font-family: Langdon, cursive;
+  font-family: Righteous, sans-serif;
   font-size: 5rem;
   font-weight: 100;
 `
@@ -40,7 +40,7 @@ const Hero = () => {
 
   return (
     <HeroWrapper style={heroAnimation} onClick={() => setHeroOpen(!isHeroOpen)}>
-      <RocketShipTitle>rocketship</RocketShipTitle>
+      <RocketShipTitle>ROCKETSHIP</RocketShipTitle>
       <div style={{ paddingBottom: '40px' }} />
       <Strapline>
         Purveyors of high quality comedy products to discerning ladies and

@@ -36,6 +36,10 @@ module.exports = {
             family: `Dancing Script`,
             variants: [`400`, `700`]
           },
+          {
+            family: `Righteous`,
+            variants: [`400`, `700`]
+          },
         ],
         formats: [
           "truetype",
