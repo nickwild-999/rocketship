@@ -24,6 +24,14 @@ const RocketShipTitle = styled.h1`
   font-family: Righteous, sans-serif;
   font-size: 5rem;
   font-weight: 100;
+  p {
+    font-family: Pacifico, cursive;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: right;
+    margin-top: 0px;
+    transform: rotate(-7deg);
+  }
 `
 
 const Strapline = styled.div`
@@ -31,6 +39,10 @@ const Strapline = styled.div`
   color: whitesmoke;
   font-weight: 400;
   font-size: 1.75rem;
+  text-align: center;
+  background-color: #230d49;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 `
 const Hero = () => {
   const [isHeroOpen, setHeroOpen] = useState(true)
@@ -40,8 +52,12 @@ const Hero = () => {
 
   return (
     <HeroWrapper style={heroAnimation} onClick={() => setHeroOpen(!isHeroOpen)}>
-      <RocketShipTitle>ROCKETSHIP</RocketShipTitle>
-      <div style={{ paddingBottom: '40px' }} />
+      <div style={{ display: 'flex' }}>
+        <RocketShipTitle>
+          ROCKETSHIP
+          <p>Productions</p>
+        </RocketShipTitle>
+      </div>
       <Strapline>
         Purveyors of high quality comedy products to discerning ladies and
         gentlemen everywhere.
