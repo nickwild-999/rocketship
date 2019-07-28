@@ -1,25 +1,34 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
-  @font-face {
-    font-family: 'Langdon Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local(Langdon Regular), 
-    url('./fonts/langdon-webfont.ttf') format(truetype), 
-    url('./fonts/langdon-webfont.xoff') format(woff),
-    url('./fonts/langdon-webfont.off2') format(woff2);
+const GlobalStyle = createGlobalStyle`
+  html{
+    font-size: 1.15rem;
+  }
+  
+  h1 {
+    font-family: Righteous, sans-serif;
+    font-size: 5rem;
   }
 
-  @font-face {
-    font-family: 'Amalina';
-    font-style: normal;
-    font-weight: normal;
-    src: local(Amalina), 
-    url('./fonts/Amalina.ttf') format(truetype)
+  h2 {
+    font-family: Dancing Script, cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    transform: rotate(-05deg);
+    padding-bottom:20px;
   }
 
-  body {
-    font-size:200px;
+  p {
+    font-size:1.15rem;
+    font-weight: 300;
   }
+
+  p.dropcap:first-letter {
+    font-size: 3rem;
+    float: left;
+    margin-top: 0.15em;
+    padding-right:0.2rem;
+    font-family: Dancing Script, cursive;
+}
 `
+export default GlobalStyle

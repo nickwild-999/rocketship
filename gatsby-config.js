@@ -5,6 +5,13 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/images/slider`,
+        name: 'slider',
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
@@ -15,6 +22,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

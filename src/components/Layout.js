@@ -12,7 +12,7 @@ import { StaticQuery, graphql } from 'gatsby'
 // import Header from './header'
 import './layout.css'
 import Footer from './Footer'
-// import createGlobalStyle from '../css/globalstyles'
+import GlobalStyle from '../css/globalstyles'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,6 +28,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <GlobalStyle />
         <div
           style={{
             margin: `0 auto`,

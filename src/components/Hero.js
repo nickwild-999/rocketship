@@ -21,9 +21,6 @@ const RocketShipTitle = styled.h1`
   color: #cc9056;
   padding-top: 50px;
   padding-left: 50px;
-  font-family: Righteous, sans-serif;
-  font-size: 5rem;
-  font-weight: 100;
   p {
     font-family: Pacifico, cursive;
     font-size: 2rem;
