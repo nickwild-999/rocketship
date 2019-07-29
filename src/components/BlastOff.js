@@ -4,9 +4,9 @@ const BlastOff = () => (
   <div>
     <h2 style={{ textAlign: 'center' }}>Blast Off!</h2>
     <p className="dropcap" style={{ paddingTop: '15px' }}>
-      Hot off the launchpad: we have just finished shooting MyBad! Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit. Et quod est munus, quod opus
-      sapientiae? Quid Zeno? Duo Reges: constructio interrete.
+      Hot off the launchpad: we have just finished shooting a teaser for MyBad!
+      starring Richard Blackwood, Jake Canuso, Will Mellor and John Thomson
+      along with Paul Chuckle, Caprice, Nicole Barber-Lane and many more.
     </p>
   </div>
 )

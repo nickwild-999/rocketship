@@ -27,12 +27,10 @@ const FPCarousel = () => (
   <StaticQuery
     query={SLIDER_QUERY}
     render={({ myImages }) => (
-      <Carousel autoplay>
+      <Carousel autoplay wrapAround>
         {myImages.edges.map(edge => (
           <div>
             <Img fluid={edge.node.image.childImageSharp.fluid} />
-            <div className="carousel-title-style">{edge.node.title}</div>
-            <div className="carousel-text-style">{edge.node.text}</div>
           </div>
         ))}
       </Carousel>

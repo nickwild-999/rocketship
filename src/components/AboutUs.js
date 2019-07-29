@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AboutUs = () => (
-  <>
+  <div style={{ paddingTop: '30px' }}>
     <h2 style={{ textAlign: 'center' }}>About Us</h2>
     <p className="dropcap" style={{ paddingTop: '15px' }}>
       Rocketship Productions was founded by writer /director Nick Wild and
@@ -14,7 +14,7 @@ const AboutUs = () => (
       established stars and new talent in UK comedy, and we live in hope that
       people chuckle along with what we produce.
     </p>
-  </>
+  </div>
 )
 
 export default AboutUs

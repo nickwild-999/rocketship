@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import { animated, useSpring } from 'react-spring'
 
 import rocketshipHero from '../images/rocketship-hero.svg'
+import rocketshipHeroSmall from '../images/rocketship-hero-sm.svg'
+import RocketShip from './RocketShip'
 
 const HeroWrapper = styled.div`
+  @media (max-width: 768px) {
+    background-image: url(${rocketshipHeroSmall});
+  }
   background-image: url(${rocketshipHero});
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -15,19 +19,6 @@ const HeroWrapper = styled.div`
   justify-content: space-between;
   flex-direction: column;
 `
-const RocketShipTitle = styled.h1`
-  color: #cc9056;
-  padding-top: 50px;
-  padding-left: 50px;
-  p {
-    font-family: Pacifico, cursive;
-    font-size: 2rem;
-    color: whitesmoke;
-    text-align: right;
-    margin-top: 0px;
-    transform: rotate(-7deg);
-  }
-`
 
 const Strapline = styled.div`
   font-family: Dancing Script, cursive;
@@ -35,29 +26,23 @@ const Strapline = styled.div`
   font-weight: 400;
   font-size: 1.75rem;
   text-align: center;
-  background-color: #230d49;
+  background-color: #230d49c0;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 `
-const Hero = () => {
-  const [isHeroOpen, setHeroOpen] = useState(true)
-  const heroAnimation = useSpring({
-    transform: isHeroOpen ? `translate3d(0,0%,0)` : `translate3d(0, -85%, 0)`,
-  })
-
-  return (
-    <HeroWrapper>
-      <div style={{ display: 'flex' }}>
-        <RocketShipTitle>
-          ROCKETSHIP
-          <p>Productions</p>
-        </RocketShipTitle>
-      </div>
-      <Strapline>
-        Purveyors of high quality comedy products to discerning ladies and
-        gentlemen everywhere.
-      </Strapline>
-    </HeroWrapper>
-  )
-}
+const Hero = () => (
+  <HeroWrapper>
+    <RocketShip />
+    <Strapline>
+      Purveyors of high quality comedy products to discerning ladies and
+      gentlemen everywhere.
+    </Strapline>
+  </HeroWrapper>
+)
 export default Hero

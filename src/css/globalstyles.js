@@ -21,6 +21,9 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size:1.15rem;
     font-weight: 300;
+    @media (max-width: 768px) {
+    font-size:1rem;
+  }
   }
 
   p.dropcap:first-letter {

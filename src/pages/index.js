@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
@@ -12,7 +11,10 @@ import FPCarousel from '../components/Carousel'
 const PageWrapper = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 6.45rem 1.0875rem;
+  padding: 2.45rem 1.0875rem;
+  @media (max-width: 768px) {
+    padding: 2.45rem;
+  }
 `
 
 const IndexPage = () => (
