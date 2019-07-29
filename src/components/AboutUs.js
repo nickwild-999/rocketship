@@ -10,9 +10,9 @@ const AboutUs = () => (
       no sirree bob!
     </p>
     <p>
-      We focus on comedy for digital, film and TV, working with some of the best
-      established stars and new talent in UK comedy, and we live in hope that
-      people chuckle along with what we produce.
+      Rocketship focus on comedy for digital, film and TV, working with some of
+      the best established stars and new talent in UK comedy, and live in hope
+      that people chuckle along with what they produce.
     </p>
   </div>
 )

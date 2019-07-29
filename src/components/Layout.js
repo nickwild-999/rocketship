@@ -13,6 +13,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import './layout.css'
 import Footer from './Footer'
 import GlobalStyle from '../css/globalstyles'
+import SpacePlans from '../images/spaceplans.gif'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -31,6 +32,7 @@ const Layout = ({ children }) => (
         <GlobalStyle />
         <div
           style={{
+            background: `linear-gradient(-45deg, #0fb8adee 10%, #1fc8dbee 51%, #2cb5e8ee 50%), url(${SpacePlans})`,
             margin: `0 auto`,
             // maxWidth: 960,
             // padding: `0px 1.0875rem 1.45rem`,

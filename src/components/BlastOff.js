@@ -8,6 +8,7 @@ const BlastOff = () => (
       starring Richard Blackwood, Jake Canuso, Will Mellor and John Thomson
       along with Paul Chuckle, Caprice, Nicole Barber-Lane and many more.
     </p>
+    <p> Watch this space for commissioning updates!</p>
   </div>
 )
 
