@@ -10,7 +10,7 @@ const HeroWrapper = styled.div`
     background-image: url(${rocketshipHeroSmall});
   }
   background-image: url(${rocketshipHero});
-  background-position: center; /* Center the image */
+  background-position: right; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 100vh;
