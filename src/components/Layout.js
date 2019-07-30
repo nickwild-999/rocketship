@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
         <GlobalStyle />
         <div
           style={{
-            background: `linear-gradient(-45deg, #0fb8adee 10%, #1fc8dbee 51%, #2cb5e8ee 50%), url(${SpacePlans})`,
+            // background: `linear-gradient(-45deg, #0fb8adee 10%, #1fc8dbee 51%, #2cb5e8ee 50%), url(${SpacePlans})`,
             margin: `0 auto`,
             // maxWidth: 960,
             // padding: `0px 1.0875rem 1.45rem`,
@@ -40,12 +40,11 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <Footer />
-          <footer>
+          {/* <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          </footer> */}
         </div>
       </>
     )}

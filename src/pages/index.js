@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
@@ -7,6 +8,7 @@ import Hero from '../components/Hero'
 import AboutUs from '../components/AboutUs'
 import BlastOff from '../components/BlastOff'
 import FPCarousel from '../components/Carousel'
+import Footer from '../components/Footer'
 
 const PageWrapper = styled.div`
   margin: 0 auto;
@@ -19,13 +21,23 @@ const PageWrapper = styled.div`
 
 const IndexPage = () => (
   <Layout>
-    <Hero />
-    <PageWrapper>
-      <SEO title="Home" />
-      <BlastOff />
-      <FPCarousel />
-      <AboutUs />
-    </PageWrapper>
+    <Parallax pages={3}>
+      <ParallaxLayer offset={1} speed={0.095}>
+        <PageWrapper>
+          <SEO title="Home" />
+          <BlastOff />
+          <AboutUs />
+        </PageWrapper>
+      </ParallaxLayer>
+      <ParallaxLayer offset={0.7} speed={0.44}>
+        <FPCarousel />
+      </ParallaxLayer>
+      <ParallaxLayer offset={0} speed={1}>
+        <Hero />
+      </ParallaxLayer>
+
+      <Footer />
+    </Parallax>
   </Layout>
 )
 
