@@ -1,19 +1,16 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import AwesomeSlider from 'react-awesome-slider'
-import 'react-awesome-slider/dist/styles.css'
-import Slider from 'nuka-carousel'
+import Carousel from 'nuka-carousel'
 
-// change on screen size
 const SLIDER_QUERY = graphql`
-  query ImageListing {
+  query ImageListing2 {
     myImages: allSliderJson {
       edges {
         node {
           image {
             childImageSharp {
-              fluid(quality: 100) {
+              fluid {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -30,13 +27,13 @@ const FPCarousel = () => (
   <StaticQuery
     query={SLIDER_QUERY}
     render={({ myImages }) => (
-      <Slider>
+      <Carousel autoplay wrapAround>
         {myImages.edges.map(edge => (
           <div>
             <Img fluid={edge.node.image.childImageSharp.fluid} />
           </div>
         ))}
-      </Slider>
+      </Carousel>
     )}
   />
 )

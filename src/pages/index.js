@@ -21,21 +21,20 @@ const PageWrapper = styled.div`
 
 const IndexPage = () => (
   <Layout>
+    {/* <SEO title="Home" /> */}
     <Parallax pages={3}>
-      <ParallaxLayer offset={1} speed={0.095}>
+      <ParallaxLayer offset={0}>
+        <Hero />
+      </ParallaxLayer>
+      <ParallaxLayer offset={1}>
+        <FPCarousel />
+      </ParallaxLayer>
+      <ParallaxLayer offset={1.65}>
         <PageWrapper>
-          <SEO title="Home" />
           <BlastOff />
           <AboutUs />
         </PageWrapper>
       </ParallaxLayer>
-      <ParallaxLayer offset={0.7} speed={0.44}>
-        <FPCarousel />
-      </ParallaxLayer>
-      <ParallaxLayer offset={0} speed={1}>
-        <Hero />
-      </ParallaxLayer>
-
       <Footer />
     </Parallax>
   </Layout>
