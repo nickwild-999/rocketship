@@ -1,8 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import AwesomeSlider from 'react-awesome-slider'
-import 'react-awesome-slider/dist/styles.css'
 import Slider from 'nuka-carousel'
 
 // change on screen size
