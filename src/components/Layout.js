@@ -28,8 +28,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <GlobalStyle />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div
           style={{
             // background: `linear-gradient(-45deg, #0fb8adee 10%, #1fc8dbee 51%, #2cb5e8ee 50%), url(${SpacePlans})`,

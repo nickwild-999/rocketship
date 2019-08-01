@@ -1,4 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
+// import * as font from './fonts'
+
+import LangdonTTF from './fonts/langdon.ttf'
+import LangdonWoff from './fonts/langdon.woff'
+import LangdonWoff2 from './fonts/langdon.woff2'
 
 const GlobalStyle = createGlobalStyle`
   html{
@@ -6,13 +11,15 @@ const GlobalStyle = createGlobalStyle`
   }
   
   h1 {
-    font-family: Righteous, sans-serif;
+    font-family: Langdon, sans-serif;
     font-size: 5rem;
+    src:url('${LangdonTTF}') format("truetype"),('${LangdonWoff}') format("woff");
+    font-weight:100;
   }
 
   h2 {
     font-family: Dancing Script, cursive;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     transform: rotate(-05deg);
     margin-bottom:5px;

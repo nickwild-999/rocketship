@@ -18,10 +18,10 @@ const RocketShipTitle = styled.h1`
   flex-direction: column;
   p {
     font-family: Pacifico, cursive;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: whitesmoke;
     text-align: right;
-    margin-top: 0px;
+    margin-top: -20px;
     transform: rotate(-7deg);
   }
   @media (max-width: 768px) {
@@ -35,7 +35,7 @@ const RocketShipTitle = styled.h1`
 const RocketShip = () => (
   <RocketShipWrapper>
     <RocketShipTitle>
-      ROCKETSHIP
+      rocketship
       <p>Productions</p>
     </RocketShipTitle>
   </RocketShipWrapper>
